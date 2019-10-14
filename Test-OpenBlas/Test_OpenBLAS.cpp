@@ -1,4 +1,4 @@
-#include<cblas.h>     // <strong>由于cblas.h文件已经拷贝到工作目录中，只需用双引号 </strong>
+#include"cblas.h"    // <strong>由于cblas.h文件已经拷贝到工作目录中，只需用双引号 </strong>
 #include<iostream>
 using namespace std;
 int main(void) {
@@ -23,9 +23,8 @@ int main(void) {
 	{
 		for (int j = 0; j < N; j++)
 		{
-			cout << C[i*N + j] << "/t";
+			cout << C[i*N + j] << "/t" << endl;
 		}
-		cout << endl;
 	}
 	system("pause");
 	return EXIT_SUCCESS;
